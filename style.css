@@ -1,0 +1,16 @@
+
+h3{
+    color: red;
+
+}
+
+#busy{
+    color:rgb(219, 102, 102);
+}
+.bg{
+    color : rgb(67, 67, 139);
+}
+.model-container{
+    width: 500px;
+    height: 600px;
+}

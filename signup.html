@@ -1,0 +1,52 @@
+
+ {% load static %}
+ <!doctype html>
+<head>
+  
+    <link rel="stylesheet" type="text/css" href='{% static 'css/style.css' %}'>
+</head>
+  <h3 style="color:blue;" text-align="center" >Register Here</h3>
+<body class="model-container"  style="image: url('{% static 'img/bhanu.jpg' %}');">
+ 
+
+  {% for message in messages %}
+  <div class="alert alert-{{ messages.tags }} alert-dismissible fade show" roles="alert">
+   <strong>Message:</strong> {{ messages }}
+   <button type="button" class="close" data-dismissible="alert" aria-label="close">
+   <span aria-hidden="True">&times;</span>
+   </button>
+  </div>
+  {% endfor %}
+
+ <form method="post" action="/signup"  class="up">
+  {% csrf_token %}
+         <label class="name" aria-placeholder="username">username</label>
+         <input type="text" class="control" id="username" name="username" placeholder="Create Your Username" required>
+         <br>
+         <label class="fname" aria-placeholder="fname">First Name</label>
+         <input type="text" class="control" id="fname" name="fname" placeholder="Write Your Name" required>
+         <br>
+         <label for="lname"></label>Last Name</label>
+         <input type="text" class="form" id="lname" name="lname" placeholder="Enter your last name" required>
+         <br>
+          <label for="email"></label>Email</label>
+          <input type="text" class="form" id="email" name="email" placeholder="Enter your Email Address" required>
+          <br>  
+          <label for="email"></label>Mobile Number</label>
+          <input type="text" class="form" id="Mob" name="mob" placeholder="Enter your Mobile number" required>
+          <br>
+          <label for="Add">Address</label>
+          <input type="text" class="form" id="Add" name="Add" placeholder="Enter your Permanent Address " required>
+          <br><label for="password">Password</label>
+           
+          
+          <input type="password" class="form" id="password" name="pass1" placeholder="Enter your password" required>
+          <br> 
+          <label for="PASS2">Confirm Password</label>
+          <input type="password" class="form" id="password" name="pass2" placeholder="Enter your password again" required>
+          <br>
+        <button type="submit" class="btn">Submit</button>
+        </form>
+  
+</body>
+<html>

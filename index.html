@@ -1,0 +1,118 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Complain Box Auth</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{%static 'css/style.css'%}" type="stylesheet">
+       
+    <head>
+        <body id="busy">
+          {% load crispy_forms_tags %} 
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          
+
+          <div>
+
+            <svg height="130" width="500">
+              <defs>
+                <linearGradient id="grad1" x1="2%" y1="3%" x2="100%" y2="0%">
+                  <stop offset="2%"
+                  style="stop-color:rgb(256,255,50);stop-opacity:1" />
+                  <stop offset="100%"
+                  style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <ellipse cx="100" cy="75" rx="70" ry="45" fill="url(#grad1)" />
+              <text fill="#ffffff" font-size="45" font-family="itallic"
+              x="50" y="86">BOX</text></svg>
+          
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item {% block aboutactive %}  {% endblock aboutactive %}" >
+                  <a class="nav-link" href="/about">About</a>
+                
+               
+                </label>
+                </li>
+                <li class="nav-item {% block contactactive %}  {% endblock contactactive %} ">
+                  <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+                <li class="nav-item {% block blogactive %}  {% endblock blogactive %} ">
+                  <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                
+              </ul>
+              <div class="ml-auto form-inline ">
+              <form method="get" action="/search"class="my-2 my-lg-0 mx-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" id="query">
+                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+                <a href="/admin" role="button" target="_blank" class="btn btn-outline-success m-2 my-sm-0"> Admin Panel </a>
+              </form>
+       
+
+
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></link>
+
+
+           {% for message in messages %}
+           <div class="alert alert-{{message.tags }} alert-dismissible fade show" roles="alert">
+            <strong>Message:</strong> {{ message }}
+            <button type="button" class="close" data-dismissible="alert" aria-label="close">
+            <span aria-hidden="True">&times;</span>
+            </button>
+           </div>
+           {% endfor %}
+
+           
+           <h3>Welcome in the complaint Box</h3>
+
+           
+           <h3>Hello {{ fname }}</h3>
+           <h4>You logged succesfully!</h4>
+        
+        
+           <button type=submit><a href="/signup">Signup</a></button>
+           
+           <button type=submit><a href="/signin">Signin</a></button>
+           <button type=submit><a href="/signout">Signout</a></button>
+          
+        
+
+           
+          
+    
+    
+        <nav class="navbar navbar-default navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="false" aria-label="Toggle navigation"></nav>
+            <span class="navbar-toggler-icon"></span>
+            
+          </div>
+        <hr>
+      
+      
+     <h3> For Complaint related to Electricity</h3>
+    
+
+     <h3> For Complaint related to Water </h3>
+
+     <h3>For Complaint related to RoadWays 
+
+     
+     
+        <body>
+<html>
